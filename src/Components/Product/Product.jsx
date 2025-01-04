@@ -22,10 +22,10 @@ export default function Product(props) {
                 <div onClick={()=>props.delete(id,props.productIndex)} className="btn btn-outline-danger w-100 my-2">Delete</div>
                 
               {/* Update button (Decrement in product quantity)*/}
-                <div onClick={()=>props.updateWithdrawal(id,Quantity,props.productIndex)} className="btn btn-outline-warning me-1 fw">Update Qty(-)</div>
+                <div onClick={()=>props.updateWithdrawal(id,Quantity,props.productIndex)} className="btn btn-outline-warning w-50">Update Qty(-)</div>
                 
               {/* Update button (increment in product quantity)*/}
-                <div onClick={()=>props.updateAdd(id,Quantity,props.productIndex)} className="btn btn-outline-success ">Update Qty(+)</div>
+                <div onClick={()=>props.updateAdd(id,Quantity,props.productIndex)} className="btn btn-outline-success w-50">Update Qty(+)</div>
 
               </div>
             </div>
