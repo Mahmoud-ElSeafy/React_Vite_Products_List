@@ -77,7 +77,7 @@ function updateProductAdd (id,Quantity,index){
       <div className="container">
         <div className="row mx-auto py-4 gy-4">
           
-          {productsList.map((product,index) => <Product productIndex={index} updateAdd={updateProductAdd} updateWithdrawal={updateProductWithdrawal} delete={deleteProduct} productDetails={product}/>)}
+          {productsList.map((product,index) => <Product key={product.id} productIndex={index} updateAdd={updateProductAdd} updateWithdrawal={updateProductWithdrawal} delete={deleteProduct} productDetails={product}/>)}
           
         </div>
       </div>
